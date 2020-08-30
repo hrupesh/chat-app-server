@@ -58,5 +58,5 @@ const pubsub = new PubSub();
 
 const server = new GraphQLServer({ typeDefs, resolvers, context: { pubsub } });
 server.start(({ port }) => {
-  console.log(`Serving on  http://localhost:${port}/`);
+  console.log(`Running on  http://localhost:${port}/`);
 });
